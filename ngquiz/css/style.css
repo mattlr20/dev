@@ -5,3 +5,6 @@
 .top-buffer {
     margin-top: 30px;
 }
+* {
+    font-size: 16px;  
+}
