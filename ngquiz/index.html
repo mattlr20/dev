@@ -138,18 +138,24 @@
 
   </div>
   
-<!--<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+<p id="bigOne"></p>
+<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
 <script>
   // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyCqZ-f-BeR5azkEY4utLz-Pr3j5C06EuhU",
-    authDomain: "my-awesome-project-b78fa.firebaseapp.com",
-    databaseURL: "https://my-awesome-project-b78fa.firebaseio.com",
-    storageBucket: "my-awesome-project-b78fa.appspot.com",
-    messagingSenderId: "378206737408"
+    apiKey: "AIzaSyAZjq_EUPba3grIBWQqp43fGzZ7aXJV2-U",
+    authDomain: "mattlr20-b6509.firebaseapp.com",
+    databaseURL: "https://mattlr20-b6509.firebaseio.com",
+    storageBucket: "mattlr20-b6509.appspot.com",
+    messagingSenderId: "941040281422"
   };
   firebase.initializeApp(config);
-</script>-->
+
+  var bigOne = document.getElementById('bigOne');
+  var dbRef = firebase.database().ref().child('text');
+  dbRef.on('value', snap => bigOne.innerText = snap.val());
+  
+</script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
