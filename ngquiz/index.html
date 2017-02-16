@@ -14,7 +14,7 @@
       </h3>
     </div>
 
-    <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive">
+    <div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive || list.quizMetrics.resultsActive">
       <form class="form-inline well well-sm clearfix">
         <span class="glyphicon glyphicon-search"></span>
         <input type="text" 
@@ -89,7 +89,8 @@
         <div class="btn-toolbar">
           <button class="btn"
             ng-repeat="question in quiz.dataService.quizQuestions"
-            ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}">
+            ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}"
+            ng-click="quiz.setActiveQuestion($index)">
               <span class="glyphicon"
               ng-class="{'glyphicon-pencil': question.selected !== null, 'glyphicon-question-sign': question.selected === null}"></span>
           </button>
@@ -115,55 +116,70 @@
     </div><!-- progress area -->
     
     <div class="row">
+      <div class="alert alert-danger"
+        ng-show="quiz.error">
+        Error! You have not answered all of the questions!
+        <button class="close" ng-click="quiz.error = false">&times;</button>
+      </div>
       <h3>Question:</h3>
-      <div class="well well-sm">
+      <div class="well well-sm" ng-hide="quiz.finalise">
         <div class="row">
           <div class="col-xs-12">
             <h4>{{quiz.activeQuestion+1 + ". " + quiz.dataService.quizQuestions[quiz.activeQuestion].text}}</h4>
-            <div class="row">
+            <div class="row"
+              ng-if="quiz.dataService.quizQuestions[quiz.activeQuestion].type === 'text'">
               <div class="col-sm-6" ng-repeat="answer in quiz.dataService.quizQuestions[quiz.activeQuestion].possibilities">
-                <h4 class="answer">
+                <h4 class="answer"
+                  ng-class="{'btn-info': $index === quiz.dataService.quizQuestions[quiz.activeQuestion].selected}"
+                  ng-click="quiz.selectAnswer($index)">
                   {{answer.answer}}
                 </h4>
               </div>
             </div>
+
+            <div class="row"
+              ng-if="quiz.dataService.quizQuestions[quiz.activeQuestion].type === 'image'">
+              <div class="col-sm-6" ng-repeat="answer in quiz.dataService.quizQuestions[quiz.activeQuestion].possibilities">
+                <div class="image-answer"
+                  ng-class="{'image-selected': $index === quiz.dataService.quizQuestions[quiz.activeQuestion].selected}"
+                  ng-click="quiz.selectAnswer($index)">
+                  <img ng-src="{{answer.answer}}">
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
         <button class="btn btn-warning" data-ng-click="quiz.questionAnswered()">Continue</button>
       </div>
-    </div>
 
-</div><!-- quiz Controller -->
+      <div class="well well-sm" ng-show="quiz.finalise">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Are you sure you want to submit your anwswers?</h3>
+              <button class="btn btn-success" ng-click="quiz.finaliseAnswers()">Yes</button>
+              <button class="btn btn-danger" ng-click="quiz.finalise = false">No</button>
+            </div>
+          </div>
+       </div>
 
+      </div><!-- question row -->
+  </div><!-- quiz Controller -->
 
+  <div ng-controller="resultsCtrl as results" ng-show="results.quizMetrics.resultsActive">
+    <h1>Hello world</h1>
   </div>
-  
-<p id="bigOne"></p>
-<script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAZjq_EUPba3grIBWQqp43fGzZ7aXJV2-U",
-    authDomain: "mattlr20-b6509.firebaseapp.com",
-    databaseURL: "https://mattlr20-b6509.firebaseio.com",
-    storageBucket: "mattlr20-b6509.appspot.com",
-    messagingSenderId: "941040281422"
-  };
-  firebase.initializeApp(config);
 
-  var bigOne = document.getElementById('bigOne');
-  var dbRef = firebase.database().ref().child('text');
-  dbRef.on('value', snap => bigOne.innerText = snap.val());
-  
-</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controller/list.js"></script>
-  <script src="js/controller/quiz.js"></script>
-  <script src="js/factories/quizMetrics.js"></script>
-  <script src="js/factories/dataservice.js"></script>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller/list.js"></script>
+<script src="js/controller/quiz.js"></script>
+<script src="js/controller/results.js"></script>
+<script src="js/factories/quizMetrics.js"></script>
+<script src="js/factories/dataservice.js"></script>
 </body>
 </html>
