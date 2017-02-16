@@ -7,12 +7,15 @@
     function DataFactory(){
         var dataObj = {
             turtlesData: turtlesData,
-            quizQuestions: quizQuestions
+            quizQuestions: quizQuestions,
+            correctAnswers: correctAnswers
         };
 
         return dataObj;
     }
 
+    var correctAnswers = [1, 2, 3, 0, 2, 0, 3, 2, 0, 3];
+    
     var quizQuestions  = [
         {
             type: "text",
