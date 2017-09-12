@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/jquery.min.js"></script>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+            <div class="jumbotron text-center hero">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -40,13 +41,10 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Matthew Richardson</h1>
-  <h3>Matthew Richardson Web Design &amp; Development</h3>
-  <!--<form class="form-inline">
-    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-    <button type="button" class="btn btn-danger">Subscribe</button>
-  </form>-->
+  <div class="hero-text">
+    <h1>Matthew Richardson</h1>
+    <h3>Web Design &amp; Development</h3>
+  </div>
 </div>
 
 <!-- Container (About Section) -->
@@ -54,97 +52,98 @@
   <div class="row">
     <div class="col-sm-6">
       <h2>About Me</h2><br>
-      <h4>I am a passionate Junior Web Developer that is well balanced in front end and back end web development. I am well-versed in numerous programming languages, with a focus in HTML, CSS, JavaScript, PHP, and SQL. I am a fast learner and responsible worker with initiative and first-rate adaptability.</h4><br>
+      <h4>Hi, I'm Matt and I am a passionate Web Developer that is well balanced in front end and back end web development. I am well-versed in numerous programming languages, with a focus in HTML, CSS, JavaScript, PHP, and SQL.</h4><br>
 
       <!--<br><button class="btn btn-default btn-lg">Get in Touch</button>-->
     </div>
     <div class="col-sm-4 col-sm-offset-1">
       <img src="images/me.jpg" class="img-circle" alt="me" width="250" height="250">
       <!-- <img src="images/myAvatar.png" alt="avatar" height="200" width="200"> -->
-      <!--<span class="glyphicon glyphicon-user logo"></span>-->
     </div>
   </div>
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>My Expertise</h2>
-  <h4>What to Expect from Me</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <i class="fa fa-code fa-5x" aria-hidden="true"></i>
-      <h4 style="color:#303030;">Code</h4>
-      <p>I love coding things from scratch, mostly with JavaScript, HTML5, CSS3, PHP, and much more.</p>
+<div id="services" class="container-fluid text-center bg-grey">
+    <h2>My Expertise</h2>
+    <h4>What to Expect from Me</h4>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <i class="fa fa-code fa-5x" aria-hidden="true"></i>
+        <h4 style="color:#303030;">Code</h4>
+        <p>I love coding things from scratch, mostly with JavaScript, HTML5, CSS3, PHP, and much more.</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa fa-cogs fa-5x" aria-hidden="true"></i>
+        <h4>Solutions</h4>
+        <p>I beleive development is more about solving problems than coding. I strive to work with others to make web apps look beautiful and work effeciently.</p>
+      </div>
+      <div class="col-sm-4">
+        <i class="fa fa-bolt fa-5x" aria-hidden="true"></i>
+        <h4>GROWTH</h4>
+        <p>I am always challenging and teaching myself. I love learning from others and learning new ways to make projects better.</p>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <i class="fa fa-cogs fa-5x" aria-hidden="true"></i>
-      <h4>Solutions</h4>
-      <p>I beleive development is more about solving problems than coding. I strive to work with others to make web apps look beautiful and work effeciently.</p>
-    </div>
-    <div class="col-sm-4">
-      <i class="fa fa-bolt fa-5x" aria-hidden="true"></i>
-      <h4>GROWTH</h4>
-      <p>I am always challenging and teaching myself. I love learning from others and learning new ways to make projects better.</p>
-    </div>
-  </div>
-  <br><br>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>Projects I have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-            <a href="https://github.com/mattlr20/Weekly-Quiz-Interface" target="_blank">
-                <img src="images/quiz1.jpg" alt="Project 1" width="400" height="300">
-                <p><strong>Weekly Quiz Interface</strong></p>
-            </a>    
+<div id="portfolio" class="container-fluid text-center bg-blue">
+  <div class="port-text">
+    <h2>Portfolio</h2>
+    <h4>Projects I have created</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+              <a href="https://github.com/mattlr20/Weekly-Quiz-Interface" target="_blank">
+                  <img src="images/quiz1.jpg" alt="Project 1" width="400" height="300">
+                  <p><strong>Weekly Quiz Interface</strong></p>
+              </a>    
+          </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+            <a href="FundApp.html" target="_blank">
+              <img src="images/fundapp.JPG" alt="Project 2" width="400" height="300">
+              <p><strong>Fund Application</strong></p>
+            </a>
         </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-          <a href="FundApp.html" target="_blank">
-            <img src="images/fundapp.JPG" alt="Project 2" width="400" height="300">
-            <p><strong>Fund Application</strong></p>
-          </a>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+            <a href="https://essexcommunitychurch.org" target="_blank">
+              <img src="images/essex.JPG" alt="Project 3" width="400" height="300">
+              <p><strong>Essex Community Church Website</strong></p>
+            </a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+            <a href="ngquiz/" target="_blank">
+              <img src="images/angularquiz.JPG" alt="Project 4" width="400" height="300">
+              <p><strong>Angular Turtle Facts Quiz</strong></p>
+            </a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+            <a href="kanban/" target="_blank">
+              <img src="images/kanban.JPG" alt="Project 4" width="400" height="300">
+              <p><strong>Kanban Board</strong></p>
+            </a>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+            <a href="haliwa-saponi/" target="_blank">
+              <img src="images/haliwa.JPG" alt="Project 4" width="400" height="300">
+              <p><strong>Haliwa-Saponi Pow wow</strong></p>
+            </a>
+        </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-          <a href="https://essexcommunitychurch.org" target="_blank">
-            <img src="images/essex.JPG" alt="Project 3" width="400" height="300">
-            <p><strong>Essex Community Church Website</strong></p>
-          </a>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-          <a href="ngquiz/" target="_blank">
-            <img src="images/angularquiz.JPG" alt="Project 4" width="400" height="300">
-            <p><strong>Angular Turtle Facts Quiz</strong></p>
-          </a>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-          <a href="kanban/" target="_blank">
-            <img src="images/kanban.JPG" alt="Project 4" width="400" height="300">
-            <p><strong>Kanban Board</strong></p>
-          </a>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-          <a href="haliwa-saponi/" target="_blank">
-            <img src="images/haliwa.JPG" alt="Project 4" width="400" height="300">
-            <p><strong>Haliwa-Saponi Pow wow</strong></p>
-          </a>
-      </div>
-    </div>
-  </div><br>
+  </div>
+</div>
   
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">

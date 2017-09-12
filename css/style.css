@@ -20,8 +20,37 @@
   .jumbotron {
       background-color: #1e90ff;
       color: #fff;
-      padding: 100px 25px;
+      padding: 350px 25px;
       font-family: Montserrat, sans-serif;
+  }
+  .hero {
+    background-image: url("../images/intro.jpeg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+#portfolio {
+    content: '';
+    background-image: url("../images/bg-port.jpeg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #portfolio h2,   #portfolio h4 {
+    color:white;
   }
   .container-fluid {
       padding: 60px 50px;
@@ -29,6 +58,9 @@
   .bg-grey {
       background-color: #f6f6f6;
   }
+  .bg-blue {
+    background-color: #1e90ff;
+}
   .logo-small {
       color: #1e90ff;
       font-size: 50px;
@@ -130,6 +162,9 @@
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
+      color: #1e90ff;
+  }
+  .fa {
       color: #1e90ff;
   }
   .slideanim {visibility:hidden;}
