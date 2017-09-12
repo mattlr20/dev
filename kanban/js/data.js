@@ -1,9 +1,9 @@
 var tasks = [
-    {"id":1,"name":"MERN.io","description":"learn mean stack","reference":"todo"},
-    {"id":2,"name":"Portal","description":"Portal updates","reference":"done"},
-    {"id":3,"name":"FINRA","description":"Test and give feed back","reference":"codeReview"},
-    {"id":4,"name":"GovPartners","description":"Maintain fund application","reference":"done"},
-    {"id":5,"name":"ABLE TN","description":"make mobile friendly","reference":"inProgress"}
+    {"id":1,"name":"Login Page","description":"create login page for users","reference":"todo"},
+    {"id":2,"name":"Intranet Bugs","description":"fix bug on intranet home page","reference":"done"},
+    {"id":3,"name":"Messenger App","description":"Create instant messenger for clients","reference":"codeReview"},
+    {"id":4,"name":"Contact Page","description":"connect contact form to database","reference":"done"},
+    {"id":5,"name":"Website overhaul","description":"make mobile friendly","reference":"inProgress"}
 ];
 
 function addList(items) {
