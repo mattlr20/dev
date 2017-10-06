@@ -1,0 +1,5 @@
+table, input,select {font-size: 13;}
+#btnConfirm {display: none}
+.panel {border-radius: 0;}
+.btn {border-radius: 0;}
+#assign.panel,table {width: 960px;}

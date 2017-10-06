@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task Randomize</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <h3>Task Randomize</h3>
+    <div id="assign" class="head panel panel-default">
+        <div class="panel-heading">
+            <button type="button" class="btn btn-primary" id="btnAssign" onclick="fNewTableRow()">Assign Tasks</button>
+            <button type="button" class="btn btn-success" id="btnConfirm" onclick="confirmData()">Confirm</button>
+        </div>
+        <table class="table table-condensed table-bordered table-hover" id="rTable">
+            <thead>
+            <tr>
+                <th>Week of</th>
+                <th>Compare Report</th>
+                <th>Pricing Reports</th>
+                <th>DTC's</th>
+                <th>Capital Changes</th>
+                <th>Pull DVDs</th>
+                <th>EOD Processes</th>
+                <th>NASDAQ</th>
+                <th>Pricing Processes</th>
+                <th>Date Roll</th>
+            </tr>
+            </thead>
+            <tbody id="dataTable">
+            <!--get data in index.js-->
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/assign.js"></script>
+
+</body>
+</html>
