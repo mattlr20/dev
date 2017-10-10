@@ -1,0 +1,146 @@
+body {
+    padding-top: 100px;
+    font-size: 13px;
+    width:100%;
+    background-color: #f3f5f3;
+    color: #252525;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: thin;
+}
+h2 {
+    color:#252525;
+    text-transform: uppercase;
+    letter-spacing:0.06em;
+    line-height:1.1em; text-align:center;
+    font-family: 'Mukta', sans-serif;
+    font-weight:200;
+    font-size: 300%;
+}
+
+.navbar-default {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    border-top: 0px solid rgba(37, 37, 37, 1);
+    border-bottom: 0px solid rgba(37, 37, 37, 1);
+    padding: 30px;
+}
+
+.navbar .nav > li > a {
+    color: #045184;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: color 0.4s ease 0s;
+}
+
+.navbar .nav > li.active a {
+    background-color: transparent;
+    color: #1798e9;
+}
+
+.navbar .nav > li > a:hover {
+    color: #1798e9;
+    text-transform: uppercase;
+    transition: color 0.4s ease 0s;
+}
+.navbar-default .navbar-brand {
+    color: #045184;
+    font-size: 24px;
+    font-weight: 600;
+}
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>span>img {
+height: 100%;
+padding: 0px;
+width: auto;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle {
+    border:none;
+    background-color: inherit;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #252525;
+}
+    
+.etf .jumbo-img {
+    margin-bottom: 0px;
+    opacity: 0.8;
+    color: rgba(255, 255, 255, 0);
+    background: #000 url("../images/intro.jpg") no-repeat center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+  
+  position:absolute;
+  top:0;left:0;
+  z-index:1;
+}
+.jumbotron {position:relative;padding:200px 50px 0 50px;margin-top: 13px}
+.jumbotron .container {z-index:2;
+ position:relative;
+  z-index:2;
+}
+
+.jumbotron .container h1 {
+    color:white;
+}
+
+.etf-info p, .etf-info ul li {
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+    text-rendering: optimizeLegibility;
+}
+
+ul.square {
+    list-style-type: square;
+    margin-left: 1.1rem;
+    list-style-position: outside;
+    padding:0;
+    margin: 0;
+}
+
+.fund-details table.table-condensed tr td {
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+ .no-pad {padding: 0}  
+ .jumbotron {margin-top: 30px;margin-bottom: 10px}
+ 
+}
+.about p {
+    font-size:20px;
+}
+.thumbnail {
+    border:none;
+    background-color: inherit;
+}
+/*footer*/
+.footer {
+	background: #EDEFF1;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
+.footer p {
+    margin: 0;
+    font-size: 15px/1.4em;
+    line-height: 1.5em;
+}
+.footer-bottom {
+	background: #E3E3E3;
+	border-top: 1px solid #DDDDDD;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.footer-bottom p.pull-left {
+    padding-top: 6px;
+    font-size: 15px/1.4em;
+    line-height: 1.5em;
+}
