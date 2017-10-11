@@ -17,6 +17,10 @@ h2 {
     font-size: 300%;
 }
 
+h4 {
+    color: #045184;
+}
+
 .navbar-default {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
@@ -144,3 +148,16 @@ ul.square {
     font-size: 15px/1.4em;
     line-height: 1.5em;
 }
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: lightgrey; 
+ }
+
+ .fund-details table>tr>td:nth-child(odd) {
+      background-color: lightgrey; 
+  }
+
+ .detail {
+     color: #045184;
+ }
