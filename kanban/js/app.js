@@ -4,7 +4,7 @@ function startDragging(e) {
     this.classList.add('dragging');
     movingCard = this;
     e.dataTransfer.effectAllowed = 'move';
-    e.dataTransfer.setData('text/html', this.innerHTML);
+    e.dataTransfer.setData('text', this.innerHTML);
 }
 
 function dragInto(e) {
@@ -32,7 +32,7 @@ function drop(e) {
 
     if (movingCard.parentNode.parentNode !== this) {
         this.getElementsByClassName('card-list')[0].appendChild(movingCard);
-        //alert("UPDATE WebTaskJournal SET reference = "+this.id+" WHERE record = "+movingCard.id);
+        //console.log("UPDATE WebTaskJournal SET reference = "+this.id+" WHERE record = "+movingCard.id);
     }
 
     return false;
