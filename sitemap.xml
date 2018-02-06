@@ -1,27 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<url>
-  <loc>http://www.matthewrichardson.design/</loc>
-  <lastmod>2017-08-02T20:58:08+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>1.00</priority>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+
+-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!--<guid value="425dcf09-5508-4709-af65-1230ecbe853e" />-->
+
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+
+
+-<url>
+
+<loc>https://www.matthewrichardson.design/</loc>
+
 </url>
-<url>
-  <loc>http://www.matthewrichardson.design/FundApp.html</loc>
-  <lastmod>2017-08-02T20:58:08+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+
+
+-<url>
+
+<loc>https://www.matthewrichardson.design/haliwa-saponi/</loc>
+
 </url>
-<url>
-  <loc>http://www.matthewrichardson.design/ngquiz/</loc>
-  <lastmod>2017-08-02T20:58:08+00:00</lastmod>
-  <changefreq>daily</changefreq>
-  <priority>0.80</priority>
+
+
+-<url>
+
+<loc>https://www.matthewrichardson.design/kanban/</loc>
+
 </url>
+
+
+-<url>
+
+<loc>https://www.matthewrichardson.design/taskrandomize/</loc>
+
+</url>
+
+
+-<url>
+
+<loc>https://www.matthewrichardson.design/FundApp</loc>
+
+</url>
+
 </urlset>
