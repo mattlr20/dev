@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    color: black;
+}
+
+img.merlin,
+img.merlin-mobile {
+    height: auto;
+    max-width: 100%;
+}
+
+@media(min-width:600px) {
+    img.merlin-mobile {
+        height: auto;
+        width: 40%;
+    }
+}
